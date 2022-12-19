@@ -12,7 +12,6 @@ export default function Catalog() {
 
     const handleGenreChange = event => {
         setCurrentGenre(event.target.value);
-        console.log(genre);
     }
 
     return (

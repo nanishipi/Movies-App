@@ -12,7 +12,6 @@ export default function MovieCard(props) {
         axios.get('https://api.themoviedb.org/3/movie/popular?api_key=cca9e22e43e09c833e8040188c69907a&language=en-US&page=1')
             .then(res => {
                 setMovies(res.data.results)
-                console.log(res.data.results)
             })
             .catch(err => {
                 console.log(err);
