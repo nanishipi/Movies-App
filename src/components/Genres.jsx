@@ -18,9 +18,9 @@ export default function Genres() {
     const data = genres;
     const listItems = genres.map(
         (genre) => {
-            return (<>
-                <option value={genre.id}>{genre.name}</option>
-            </>)
+            return (
+                <option key={genre.id} value={genre.id}>{genre.name}</option>
+            )
         }
     )
     return (

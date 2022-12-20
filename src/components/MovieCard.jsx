@@ -22,8 +22,8 @@ export default function MovieCard(props) {
     const listItems = movies.map(
         (movie) => {
             if (movie.genre_ids.includes(+props.genreId) || props.genreId === "" || props.genreId === "none") {
-                return (<>
-                    <div className="card">
+                return (
+                    <div className="card" key={movie.title}>
                         <div className="card-header">
                             <img src={"https://image.tmdb.org/t/p/original/" + movie.poster_path} alt={movie.title} />
                         </div>
@@ -33,7 +33,7 @@ export default function MovieCard(props) {
                             </h3>
                         </div>
                     </div>
-                </>)
+                )
             }
         }
     )
