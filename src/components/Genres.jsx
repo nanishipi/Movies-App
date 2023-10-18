@@ -15,7 +15,6 @@ export default function Genres() {
             })
     }, [])
 
-    const data = genres;
     const listItems = genres.map(
         (genre) => {
             return (

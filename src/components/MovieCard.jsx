@@ -18,7 +18,6 @@ export default function MovieCard(props) {
             })
     }, [])
 
-    const data = movies;
     const listItems = movies.map(
         (movie) => {
             if (movie.genre_ids.includes(+props.genreId) || props.genreId === "" || props.genreId === "none") {
